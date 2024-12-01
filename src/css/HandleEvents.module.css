@@ -1,0 +1,91 @@
+.container {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background */
+}
+
+.header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333; /* Dark text color */
+}
+
+.successMessage {
+  color: #4CAF50; /* Green for success */
+}
+
+.errorMessage {
+  color: #f44336; /* Red for error */
+}
+
+.eventsTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.eventsTable th {
+  background-color: #4CAF50; /* Green header */
+  color: #fff; /* White text */
+}
+
+.eventsTable th,
+.eventsTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  color: #333; /* Dark text */
+}
+
+/* Unique class for Accept button */
+.acceptButton {
+  background-color: #4CAF50; /* Green for accept */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.acceptButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Unique class for Reject button */
+.rejectButton {
+  background-color: #f44336; /* Red for reject */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rejectButton:hover {
+  background-color: #e53935; /* Darker red on hover */
+}
+
+/* Class for Drive Link button */
+.driveLinkButton {
+  background-color: #2196F3; /* Blue for drive link */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.driveLinkButton:hover {
+  background-color: #1976D2; /* Darker blue on hover */
+}
+
+/* Class for Update Drive Link button */
+.updateDriveLinkButton {
+  background-color: #9E9E9E; /* Gray for update */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.updateDriveLinkButton:hover {
+  background-color: #757575; /* Darker gray on hover */
+}

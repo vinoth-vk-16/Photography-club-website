@@ -1,0 +1,219 @@
+/* Base styles for larger screens */
+.home {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.vision, .vision1, .vision2 {
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    min-height: 100vh; /* Full height of viewport */
+    display: flex;
+    align-items: center;
+}
+
+.vision {
+    justify-content: start;
+    padding-left: 50px;
+}
+
+.vision1 {
+    justify-content: end;
+    padding-right: 50px;
+}
+
+.visioncontent {
+    width: 700px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    margin: 100px;
+}
+
+.visioncontent:hover {
+    transform: scale(1.1);
+}
+
+.visioncontent h1 {
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+
+.visioncontent p {
+    padding: 25px;
+    font-size: 1.3em;
+    color: green;
+}
+
+.bookbtn {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+.bookbtn button {
+    background-color: green;
+    font-size: 1.7em;
+    padding: 10px;
+    border: 10px solid white;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.bookbtn button:hover {
+    background-color: darkgreen;
+}
+
+/* Vision2 section */
+.vision2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.visioncontent2 {
+    display: flex;
+    justify-content: space-between;
+    width: 1240px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    padding: 50px;
+    font-size: 1.1em;
+}
+
+.club-details,
+.advisor-details {
+    width: 48%;
+    padding: 10px;
+}
+
+h2 {
+    color: darkgreen;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: green;
+    margin-top: 10px;
+}
+
+.advisor-image {
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p,
+ul {
+    margin: 5px 0;
+    color: black;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Responsive styling using media queries */
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .vision, .vision1, .vision2 {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .visioncontent, .visioncontent2 {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .visioncontent h1 {
+        font-size: 1.8rem;
+    }
+
+    .visioncontent p {
+        font-size: 1.2em;
+    }
+
+    .visioncontent2 {
+        width: 90%;
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .club-details,
+    .advisor-details {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .visioncontent, .visioncontent2 {
+        width: 90%;
+        margin: 30px auto;
+    }
+
+    .visioncontent h1 {
+        font-size: 1.5rem;
+    }
+
+    .visioncontent p {
+        font-size: 1em;
+    }
+
+    .visioncontent2 h2 {
+        font-size: 1.4rem;
+    }
+
+    .visioncontent2 p,
+    .visioncontent2 ul {
+        font-size: 1em;
+    }
+
+    .advisor-image {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* For very small devices (max-width: 320px) */
+@media (max-width: 320px) {
+    .visioncontent {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .visioncontent h1 {
+        font-size: 1.3rem;
+    }
+
+    .visioncontent p {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+}

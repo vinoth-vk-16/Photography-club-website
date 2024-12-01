@@ -1,0 +1,98 @@
+/* General Styles */
+.header {
+    background-color: black;
+    color: white;
+    width: 100%; /* Make sure the header spans the full viewport width */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  
+  .header img {
+    height: 98px;
+    width: auto;
+    border: 1px solid black;
+  }
+  
+  .title {
+    padding-left: 20px;
+    font-size: 24px;
+    margin-right: auto;
+  }
+  
+  .pagenav {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    
+  }
+  
+  .pagenav p {
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .pagenav p:hover {
+    color: rgb(57, 191, 57);
+    transform: scale(1.3);
+  }
+  
+  .pagenav p:active {
+    color: #ff6347;
+    transform: scale(0.95);
+  }
+  
+  /* Hamburger Menu (hidden by default) */
+  .hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+  .about-link {
+    text-decoration: none; /* No underline */
+    color: white; /* Default color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+  }
+  
+  .about-link:hover {
+    color: rgb(57, 191, 57); /* Color on hover */
+  }
+  
+  
+  /* Responsive Styles for Mobile Devices */
+  @media screen and (max-width: 768px) {
+    /* Hide the navigation links on mobile */
+    .pagenav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100px;
+      right: 20px;
+      background-color: black;
+      padding: 10px 20px;
+      z-index: 1000;
+    }
+  
+    .pagenav p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  
+    /* Show the nav when open */
+    .pagenav.open {
+      display: flex;
+    }
+  
+    /* Show the hamburger on mobile */
+    .hamburger {
+      display: block;
+    }
+  }
+  

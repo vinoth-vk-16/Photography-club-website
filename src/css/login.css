@@ -1,0 +1,77 @@
+/* Base styles for the login page */
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: calc(100vh - 100px); /* Subtracting the header height */
+    padding: 20px;
+    box-sizing: border-box; /* Include padding in the width/height calculations */
+    background: linear-gradient(135deg, #004d00, #1a8f1a); /* Dark green gradient background */
+}
+.login-header{
+    color: white;
+}
+
+/* Container for the login form */
+.login-form {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    padding: 30px;
+    width: 100%; /* Full width of its container */
+    max-width: 400px; /* Maximum width for the form */
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+}
+
+/* Input styles */
+.login-form input {
+    margin: 10px 0; /* Space between inputs */
+    padding: 15px;
+    border: 1px solid #ccc; /* Light border for inputs */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Button styles */
+.login-form button {
+    background-color: rgb(0, 0, 0); /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for buttons */
+.login-form button:hover {
+    background-color: darkgreen; /* Darker green on hover */
+}
+.signup-link {
+    text-decoration: none; /* Ensure the underline is removed */
+    color: white; /* Optional: make the link inherit the text color */
+}
+Link{
+    text-decoration: none;
+}
+
+.signup-link:hover {
+    color: darkgreen; /* Optional: change color on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .login-form {
+        width: 90%; /* Make form wider on smaller screens */
+        padding: 20px; /* Adjust padding */
+    }
+
+    .login-form input,
+    .login-form button {
+        font-size: 0.9em; /* Smaller font size for inputs and buttons */
+    }
+}
