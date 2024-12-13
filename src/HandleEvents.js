@@ -12,7 +12,7 @@ const HandleEvents = () => {
   useEffect(() => {
     const fetchRequests = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/bookings'); // Adjust the URL to match your backend
+        const res = await axios.get('https://backend-clubweb.onrender.com/api/bookings'); // Adjust the URL to match your backend
         setRequests(res.data);
       } catch (error) {
         console.error('Error fetching requests:', error);
@@ -25,7 +25,7 @@ const HandleEvents = () => {
 
   const handleAccept = async (requestId) => {
     try {
-      const res = await axios.put(`http://localhost:5000/api/bookings/${requestId}`, {
+      const res = await axios.put(`https://backend-clubweb.onrender.com/api/bookings/${requestId}`, {
         bookingStatus: 'Accepted',
       });
       setRequests(requests.map(request => 
@@ -41,7 +41,7 @@ const HandleEvents = () => {
 
   const handleReject = async (requestId) => {
     try {
-      const res = await axios.put(`http://localhost:5000/api/bookings/${requestId}`, {
+      const res = await axios.put(`https://backend-clubweb.onrender.com/api/bookings/${requestId}`, {
         bookingStatus: 'Rejected',
       });
       setRequests(requests.map(request => 
@@ -57,7 +57,7 @@ const HandleEvents = () => {
 
   const handleDriveLinkSubmit = async (requestId) => {
     try {
-      const res = await axios.put(`http://localhost:5000/api/bookings/${requestId}`, {
+      const res = await axios.put(`https://backend-clubweb.onrender.com/api/bookings/${requestId}`, {
         driveLink,
       });
       setRequests(requests.map(request => 

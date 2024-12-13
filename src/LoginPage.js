@@ -22,7 +22,7 @@ const LoginPage = ({ setloggedin }) => {
     setErrorMessage(''); // Reset error message
 
     try {
-      const res = await axios.post('http://localhost:5000/auth/login', formData);
+      const res = await axios.post('https://backend-clubweb.onrender.com/auth/login', formData);
       console.log('Login successful:', res.data);
 
       // Store token and user ID in local storage

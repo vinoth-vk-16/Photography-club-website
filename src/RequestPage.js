@@ -32,7 +32,7 @@ const RequestPage = () => {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/bookings', formData);
+      const res = await axios.post('https://backend-clubweb.onrender.com/api/bookings', formData);
       setSuccessMessage('Event request submitted successfully!');
       setErrorMessage('');
       setRequests([...requests, res.data]); // Add the new request to the state
@@ -55,7 +55,7 @@ const RequestPage = () => {
     const fetchRequests = async () => {
       const userId = localStorage.getItem('userId');
       try {
-        const res = await axios.get(`http://localhost:5000/api/bookings/user/${userId}`);
+        const res = await axios.get(`https://backend-clubweb.onrender.com/api/bookings/user/${userId}`);
         setRequests(res.data);
       } catch (error) {
         console.error('Error fetching requests:', error);

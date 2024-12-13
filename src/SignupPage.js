@@ -25,7 +25,7 @@ const SignupPage = () => {
     setSuccess(null); // Reset success state
 
     try {
-      const res = await axios.post('http://localhost:5000/auth/signup', formData);
+      const res = await axios.post('https://backend-clubweb.onrender.com/auth/signup', formData);
       setSuccess('Signup successful!'); // Set success message
       console.log('Signup successful:', res.data);
       navigate('/loginpage');
