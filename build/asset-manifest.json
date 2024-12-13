@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Photography-club-website/static/css/main.7bda6ba6.css",
+    "main.js": "/Photography-club-website/static/js/main.8d7a0e3e.js",
+    "static/js/453.f3432a8d.chunk.js": "/Photography-club-website/static/js/453.f3432a8d.chunk.js",
+    "static/media/homepic.jpg": "/Photography-club-website/static/media/homepic.3cde41f12046ceaea6a1.jpg",
+    "static/media/camimg.jpg": "/Photography-club-website/static/media/camimg.6c26dda7411eb40e5c05.jpg",
+    "index.html": "/Photography-club-website/index.html",
+    "main.7bda6ba6.css.map": "/Photography-club-website/static/css/main.7bda6ba6.css.map",
+    "main.8d7a0e3e.js.map": "/Photography-club-website/static/js/main.8d7a0e3e.js.map",
+    "453.f3432a8d.chunk.js.map": "/Photography-club-website/static/js/453.f3432a8d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bda6ba6.css",
+    "static/js/main.8d7a0e3e.js"
+  ]
+}
